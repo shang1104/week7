@@ -1,10 +1,49 @@
----
-title: 程式家教
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>程式家教</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+  
+  <body>
+    
+<!--  -->
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="material-symbols-outlined Hamburger-icon text-success">menu</span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item text-md-center py-md-5">
+          <a class="navbar-link px-4 py-4 fs-7 text-light text-decoration-none" href="./index.html">首頁</a>
+        </li>
+        <li class="nav-item text-md-center py-md-5">
+          <a class="navbar-link px-4 py-4 fs-7 text-light text-decoration-none" href="./course.html">課程介紹</a>
+        </li>
+        <li class="nav-item text-md-center py-md-5">
+          <a class="navbar-link px-4 py-4 fs-7 text-light text-decoration-none" href="#"><span class="material-symbols-outlined login-icon">account_circle</span>登入</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="w-100 d-flex">
+    <div class="col-6 border-bottom border-success border-2"></div>
+    <div class="col-6 border-bottom border-info border-2"></div>
+  </div>
+</nav>
+  </body>
+    
 <!-- 第二次 -->
 <section class="bg-dark">
   <div class="container pb-6 pb-md-9">
@@ -281,3 +320,28 @@ current: index
     </div>
   </div>
 </section>
+
+
+    <footer class="bg-primary">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <p class="text-warning py-4 fs-lg-7 fs-sm-6 white-nowrap">Coding Home © 2022 All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./aos.js"></script>
+    <!-- aos -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+
+
+  </body>
+
+</html>
