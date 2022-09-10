@@ -1,0 +1,302 @@
+.banner {
+  background-image: url(../images/bg_home.jpg);
+  height: 650px;
+  background-size: cover;
+  h2 {
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.cube {
+  height: 10px;
+  width: 10px;
+}
+
+.striped-img {
+  background: linear-gradient(to right, $info, $success);
+  background-clip: text;
+}
+.striped-bg {
+  background: linear-gradient(to right, $info, $success);
+}
+
+.line {
+  width: 50px;
+}
+
+//icon 手把手帶你
+.code-icon,
+.rocket-icon,
+.map-icon {
+  font-size: 50px;
+}
+//icon 所有課程
+.message-icon,
+.buld-icon,
+.good-icon,
+.team-icon {
+  font-size: 32px;
+}
+//icon 加入成為導師
+.book-icon {
+  font-size: 80px;
+}
+
+.frame {
+  border: 1px solid transparent;
+  &:hover {
+    border: 1px solid $success;
+    border-radius: 12px;
+    background-color: $dark;
+    .map-icon,
+    .rocket-icon,
+    .code-icon {
+      background: linear-gradient(to right, $info, $success);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+.scroll {
+  overflow-x: scroll;
+}
+
+.course-1,
+.course-2,
+.course-3,
+.course-4 {
+  @media (min-width: $sm) {
+    background-size: cover;
+    position: relative;
+    height: 263px;
+    .course {
+      background: rgba(255, 255, 255, 0.1);
+      height: 100%;
+    }
+    .message-icon {
+      color: $success;
+    }
+    .line {
+      border: 1px solid $success;
+    }
+  }
+  @media (min-width: $lg) {
+    height: 615px;
+    opacity: 0.3;
+    &:hover {
+      opacity: 1;
+    }
+    .message-icon,
+    .buld-icon,
+    .good-icon,
+    .team-icon,
+    p {
+      color: $warning;
+    }
+    .line {
+      border: 1px solid $warning;
+    }
+    &:hover .message-icon,
+    .buld-icon,
+    .good-icon,
+    .team-icon,
+    p {
+      color: $success;
+    }
+    &:hover .line {
+      border: 1px solid $success;
+    }
+  }
+}
+
+.course-1 {
+  background-image: url(../images/info01.jpg);
+}
+.course-2 {
+  background-image: url(../images/info02.jpg);
+}
+.course-3 {
+  background-image: url(../images/info03.jpg);
+}
+.course-4 {
+  background-image: url(../images/info04.jpg);
+}
+
+.bg-share {
+  background-image: url(../images/bg_share.jpg);
+  height: 733px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  // @media (min-width:$lg){
+  //   height: auto;
+  // }
+}
+
+.carousel-inner {
+  width: 525px;
+}
+
+.corner:hover {
+  .corner-top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    border-top: 2px solid $success;
+    border-left: 2px solid $success;
+    border-top-left-radius: 12px;
+  }
+  .corner-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    border-top: 2px solid $success;
+    border-right: 2px solid $success;
+    border-top-right-radius: 12px;
+  }
+  .corner-bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    border-bottom: 2px solid $success;
+    border-left: 2px solid $success;
+    border-bottom-left-radius: 12px;
+  }
+  .corner-bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    border-bottom: 2px solid $success;
+    border-right: 2px solid $success;
+    border-bottom-right-radius: 12px;
+  }
+}
+
+// 助教您好
+// 因這段我改utilities(648行） 和新增 variables(388行) 都沒有效果
+.rounded-4 {
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  border-top-left-radius: 24px;
+}
+
+.feedback {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_share.jpg?raw=true);
+  height: 733px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 80px 0;
+  @media (max-width: 991px) {
+    height: auto;
+  }
+}
+
+.swiper {
+  @media (min-width: $sm) {
+    height: auto;
+  }
+  @media (min-width: $lg) {
+    height: 429px;
+  }
+  @media (min-width: $sm) {
+    &-wrapper {
+      height: 462px;
+    }
+  }
+  @media (min-width: $lg) {
+    &-wrapper {
+      height: 429px;
+    }
+  }
+
+  &-img {
+    @media (min-width: $sm) {
+      position: relative;
+      width: calc(100% - 5px);
+      height: 213px;
+      left: 5px;
+      margin-bottom: 40px;
+    }
+    @media (min-width: $lg) {
+      top: 0;
+      left: 10px;
+      width: 60%;
+      height: 90%;
+    }
+  }
+  .card {
+    @media (min-width: $sm) {
+      width: 100%;
+      top: 258px;
+      &-img {
+        width: 80px;
+        top: -40px;
+        right: 24px;
+      }
+    }
+    @media (min-width: $lg) {
+      width: 48.6%;
+      top: 266px;
+      right: 0;
+      &-img {
+        width: 100px;
+        height: 100px;
+        top: -50px;
+        right: 32px;
+      }
+    }
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    content: "";
+  }
+
+  &-button-next,
+  &-button-prev {
+    position: unset;
+    width: 24px;
+    height: 30px;
+    color: $success;
+  }
+
+  .swiper-pagination {
+    position: unset;
+    width: auto;
+    .swiper-pagination-bullet {
+      background-color: $success;
+      opacity: initial;
+      &-active {
+        width: 16px;
+        border-radius: 100px;
+      }
+    }
+  }
+
+  &-buttons {
+    @media (min-width: $sm) {
+      position: absolute;
+      left: 33%;
+      bottom: 10px;
+    }
+    @media (min-width: $lg) {
+      bottom: 16px;
+      left: 20%;
+    }
+  }
+}
+
+.footer-link:hover {
+  background: $light !important;
+  color: $dark !important;
+}

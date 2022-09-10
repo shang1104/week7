@@ -1,0 +1,14 @@
+.white-nowrap {
+  white-space: nowrap;
+}
+.course-item:hover {
+  background: $success;
+}
+
+.introduce-link:hover {
+  background: $light;
+  color: $dark !important;
+}
+.striped-bg:hover {
+  background: linear-gradient(to right, $success, $info);
+}
